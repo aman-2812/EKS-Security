@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+ name: eks-sample-app-sa 
+ namespace: eks-sample-app
+ annotations:
+   eks.amazonaws.com/role-arn:  arn:aws:iam::350080658121:role/secure-cabbage-k8s-pods-role
